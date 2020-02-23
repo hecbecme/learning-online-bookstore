@@ -8,9 +8,12 @@
   </thead>
   <tbody>
     <tr *ngFor="let book of books">
+      <td>
+        <img src="http://placehold.it/50x50">
+      </td>
       <td>{{ book.name }}</td>      
       <td>{{ book.description }}</td>      
-      <td>{{ book.unitPrice | currency: 'INR' }}</td>      
+      <td>{{ book.unitPrice | currency: 'INR' }}</td>
     </tr>
   </tbody>
 </table>
