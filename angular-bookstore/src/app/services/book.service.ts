@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BookService {
 
+  private baseURL = '';
+
   constructor(
     private httpClient: HttpClient
    ) { }
